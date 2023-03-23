@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE CODE 2</title>
+</head>
+<body>
+    <div id ="biodata">
+        <h2>BIODATA DIRI</h2>
+        <p id ="hasil"></p>    
+    </div>
+</body>
+<script>
+    const biodata ={
+    namaDepan : "Gheina",
+    namaTengah : "Gemalia",
+    namaBelakang : "Thalita",
+    hobi:["ngopi, masak"],
+    angkaFavorit : 7,
+    fullName : function(){
+    return this.namaDepan + " " + this.namaTengah + " " + this.namaBelakang;
+    }
+};
+console.log(biodata);
+console.log(biodata.fullName());
+
+   biodata["lulusan"] = "hacktiv";
+   biodata.angkaFavorit=8;
+
+    const result = biodata.hobi.map ((value)=> value + ", ngoding");
+    console.log(result);
+
+
+
+const kacamata = true
+if (kacamata) {
+console.log("kacamata")
+} else {
+    console.log("pakai kacamata")
+}
+document.getElementById("hasil").innerHTML = biodata.fullName() +  "  " + "hobinya" + "  " + biodata.hobi +  "  " + "angka favoritnya adalah" + " " + biodata.angkaFavorit;
+</script>
+</html>
