@@ -19,9 +19,9 @@ biodata.hobi.push("coding");
 console.log(biodata);
 
 // - Ubah angka_favorit jadi 8.
-Object.angka_favorit = '8'
+biodata.angka_favorit = '8'
 // - Tambahkan satu property "lulusan" dengan value "Hacktiv8".
-Object.lulusan = "Hacktiv8";
+biodata.lulusan = "Hacktiv8";
 
 // Cetak semua hobi satu per satu menggunakan loop.
 for (let i = 0; i < biodata.hobi.length; i++) {
@@ -32,7 +32,7 @@ for (let i = 0; i < biodata.hobi.length; i++) {
 
 
 // - Gunakan loop untuk cetak semua property milik objek dengan format key : values.
-for (let key in Object) {
-    console.log(`${key} : ${Object[key]}`);
+for (let key in biodata) {
+    console.log(`${key} : ${biodata[key]}`);
 }
 
