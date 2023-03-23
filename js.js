@@ -9,10 +9,11 @@ let Profil = {
 
 function ubahprofil(katakunci, inputbaru) {
     Profil[katakunci] = inputbaru;
+    
     //console.log(Profil[katakunci]);
 }
 
-console.log(profil.namadepan,profil.namabelakang);
+//console.log(Profil.namadepan,Profil.namabelakang);
 
 
 ubahprofil("NomorFavorit", 18);
@@ -27,18 +28,18 @@ Profil.lulusan = "Hacktive8";
 
 
 Profil.hobi.forEach(hobi =>{
-    
+    //console.log(hobi);
 })
 
 
 Object.keys(Profil).forEach(key =>{
-    
+    //console.log(key);
 })
 Object.values(Profil).forEach(value =>{
-    
+    //console.log(value);
 })
 
 
 Object.keys(Profil).forEach(key =>{
-    
+    //console.log(key + ":", Profil[key]);
 })
