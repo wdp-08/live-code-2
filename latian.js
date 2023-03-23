@@ -1,25 +1,48 @@
-
-let mySelf = {
+let biodata = {
           firstName: 'Rahmaisya',
-          lastName: 'Damayanti',
-          middleName: 'Intan',
+          lastName: 'Intan',
           hobbies: ['masak', 'bermain', 'nonton film'],
-          favoriteNumber: 19,
-          isWearingGlasses: true
+          favoriteNumber: 17,
+          univerity: 'Udinus',
         }
         
-        console.log(`Nama saya adalah ${mySelf.firstName} ${mySelf.middleName} ${mySelf.lastName}`)
+        console.log(`Haloo Nama lengkap ${biodata.firstName} ${biodata.lastName}`)
         
-        mySelf.favoriteNumber = 8
+        biodata.favoriteNumber = 8
         
-        console.log(`Angka favorit berubah menjadi ${mySelf.favoriteNumber}`)
+        console.log(`Angka favorit ${biodata.favoriteNumber}`)
         
-        mySelf.lulusan = 'Hacktiv8'
-        mySelf['lulusan'] = 'Hacktiv8'
+        biodata.lulusan = 'Hacktiv8'
+        biodata['lulusan'] = 'Hacktiv8'
         
-        console.log(`Saya adalah lulusan ${mySelf.lulusan}`)
+        console.log(`Saya lulusan ${biodata.lulusan}`)
         
-        console.log('hobi saya adalah')
-        mySelf.hobbies.forEach(hobby => {
+        biodata.univerity = 'Udinus'
+        biodata['univerity'] = 'Udinus'
+        
+        console.log(`Saya dari univerity ${biodata.univerity}`)
+
+        console.log('hobi saya')
+        biodata.hobbies.forEach(hobby => {
           console.log(`- ${hobby}`)
         })
+        
+        for (const key in biodata) {
+          console.log(`${key} : ${biodata[key]}`)
+        }
+        
+        function writeCurrentDate () {
+          const currentDate = new Date() // return 0 GMT
+          console.log(currentDate)
+        }
+        // writeCurrentDate()
+        
+        function returnCurrentDate () {
+          const currentDate = new Date
+        
+          return currentDate
+        }
+        
+        const resultDate = returnCurrentDate()
+        console.log(resultDate)
+        
